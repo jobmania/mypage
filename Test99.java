@@ -14,6 +14,7 @@ public class Test99 {
 //        bus1.takeBusCar(5);
 //        bus1.takeBusCar(-6);
 //        bus1.haveOil(+10);
+//        bus1.operationInformation();
 //        bus1.changeSpeed(10);
 
 
@@ -23,10 +24,11 @@ public class Test99 {
         PublicTaxi taxi2 = new PublicTaxi();
 
         taxi1.CompareCarNumber(taxi1.carNumber, taxi2.carNumber);
+        taxi1.changeSpeed(15);
         taxi1.taketaxiCar(1,10,"역삼역");
         taxi1.haveTaxiOil(-10);
         taxi1.operationTaxiInfo();
-        taxi1.taketaxiCar(2,1,"기러기");
+        taxi1.taketaxiCar(0,0,"기러기");
         taxi1.haveTaxiOil(-80);
         taxi1.changeInformation("정지");
 

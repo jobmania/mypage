@@ -54,7 +54,6 @@ public class BusTaxi{
     }
 
 
-
     void operationInformation(){
         if(CarStatus){
             System.out.println("운행중입니다. 남은 오일은"+haveOil);
@@ -99,6 +98,7 @@ class PublicTaxi extends BusTaxi {
                 CarStatus = true;
                 int Distance = y;
                 String Destination = z;
+                System.out.println("거리는 " + Distance + "km, 도착지는 " + Destination + "입니다");
                 if(Distance>3){
                     int presentPrice = 3000 + 500*Distance;
                     Price = Price + presentPrice;
@@ -108,7 +108,7 @@ class PublicTaxi extends BusTaxi {
                     Price = Price+presentPrice;
                     System.out.println("현재 요금은 "+presentPrice+"입니다.");
                 }
-                System.out.println("거리는 " + Distance + "km, 도착지는 " + Destination + "입니다");
+
                 System.out.print("현재 택시에 "+ in_person+"명이 타고있습니다. 잔여승객은 "+ Max_person+"명이다. ");
                 System.out.println("벌어들인 요금은"+Price+"입니다.");
             }
